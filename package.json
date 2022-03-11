@@ -1,0 +1,18 @@
+{
+  "name": "@mrlemoos/tensorflow-impl",
+  "version": "0.1.0",
+  "description": "Uma implementação do tensorflow para testes de usabilidade do framework de IA.",
+  "main": "NONE",
+  "repository": "https://gitlab.com/sbsistemas/tensorflow-impl",
+  "author": "Leonardo Lemos <leonardo@smarten.com.br>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "private": true,
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.14.0",
+    "@tensorflow/tfjs-node": "^3.14.0"
+  },
+  "scripts": {
+    "run:get-started": "node ./src/get-started.mjs",
+    "run-log:get-started": "node ./src/get-started.mjs | tee ./logs/get-started-$(echo $(date +%s)).log"
+  }
+}
